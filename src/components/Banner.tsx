@@ -12,7 +12,7 @@ export default function Banner() {
         </h2>
       </div>
       <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-        New product featuyres | The latest in technology | The weekly debuggin
+        New product features | The latest in technology | The weekly debuggin
         nightmares & More!
       </p>
     </div>
