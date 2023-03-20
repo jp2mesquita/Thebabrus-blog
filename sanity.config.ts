@@ -3,12 +3,16 @@ import { deskTool } from 'sanity/desk'
 import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './src/schemas'
 
-export default defineConfig({
-  name: 'default',
-  title: 'nextjs13 sanity thebrabus-blog',
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!
 
-  projectId: 'llit3fv1',
-  dataset: 'production',
+export default defineConfig({
+  basePath: '/studio',
+  name: 'PAPAFAM_Content_Studio',
+  title: 'PAPAFAM Content Studio',
+
+  projectId,
+  dataset,
 
   plugins: [deskTool(), visionTool()],
 
