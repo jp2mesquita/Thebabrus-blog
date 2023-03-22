@@ -6,7 +6,7 @@ export default function Banner() {
         <h2 className="mt-5 md:mt-0">
           welcome to{' '}
           <span className="underline decoration-4 decoration-[#f7ab0a]">
-            Every Developers
+            Every Developers{' '}
           </span>
           favorite blog in the Devosphere
         </h2>
