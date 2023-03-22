@@ -65,4 +65,5 @@ export interface Post extends Base {
   mainImage: Image
   title: string
   description: string
+  slug: Slug
 }
