@@ -12,6 +12,7 @@ const query = groq`
     categories[]->
   } | order(_createdAt desc)
 `
+export const revalidate = 30 // 1 minute
 
 export default async function Home() {
   if (previewData()) {
@@ -35,7 +36,6 @@ export default async function Home() {
   return (
     <div>
       <BlogList posts={posts} />
-      <h1>Not in Preview Mode</h1>
     </div>
   )
 }
