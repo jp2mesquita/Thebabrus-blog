@@ -34,13 +34,13 @@ export async function generateStaticParams() {
 
 export default async function Post({ params: { slug } }: PostProps) {
   const query = groq`
-    *[_type=='post' && slug.current == $slug][0]
-    {
-      ...,
-      author->,
-      categories[]->
-    }
-  `
+  *[_type=='post' && slug.current == $slug][0]
+  {
+    ...,
+    author->,
+    categories[]->
+  }
+`
 
   const post: PostTypeInterface = await client.fetch(query, { slug })
 
