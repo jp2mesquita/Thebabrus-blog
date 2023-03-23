@@ -9,7 +9,6 @@ type Props = {
 }
 
 export default function BlogList({ posts }: Props) {
-  console.log(posts[0].body[0].children[0])
   return (
     <div>
       <hr className="border-[#f7ab0a] mb-10" />
